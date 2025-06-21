@@ -1,2 +1,0 @@
-# frontendmentor
-Frontend Mentor Exercises
