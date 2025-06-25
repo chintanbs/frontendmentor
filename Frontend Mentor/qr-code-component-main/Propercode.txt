@@ -1,3 +1,72 @@
+. Inefficiencies & Issues in the Code
+❌ Misuse of .attribution class
+The .attribution class is meant for crediting Frontend Mentor. You're using it as the main container.
+
+Fix: Rename it to .card or .container and use .attribution separately for the credits if needed.
+
+❌ Hardcoded margins (margin-left: 45%, margin-top: 15%)
+These make the layout non-responsive and dependent on screen size.
+
+Fix: Use Flexbox or Grid for centering instead.
+
+❌ Fixed width: 10% for container
+This breaks layout in mobile view. Too narrow and won’t scale well.
+
+Fix: Use relative units with a max-width for responsiveness.
+
+❌ No padding inside card
+Text touches edges, which isn't visually ideal.
+
+Fix: Add padding inside the container.
+
+❌ Font size is a bit small
+Especially the paragraph text (0.7rem) is too tiny on mobile.
+
+
+
+
+
+Proper Code Fixes
+3. Responsive Design Features in the Above Code
+a. Mobile-first layout with max-width and centered flex layout.
+
+b. Text sizes adjusted for legibility on all screens.
+
+c. Container padding added for spacing.
+
+d. Media query at 768px scales up fonts and layout for desktop/tablet.
+
+e. Clean separation between content .card and attribution section.
+
+4. Final Tips
+a. Always start mobile-first and then scale up with media queries.
+
+b. Avoid absolute dimensions (like `% margins or fixed widths).
+
+c. Use semantic class names (.card, .container, .attribution) clearly and consistently.
+
+d. Test in browser DevTools by toggling responsive views.
+
+e. Would you like help creating a CSS file instead of using <style> tags?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
